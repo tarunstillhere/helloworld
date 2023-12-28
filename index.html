@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://formspree.io/f/mbjnrqle"
+      method="POST"
+        <h3 id="heading">ADMISSION ENQUIRY FORM</h3>
+        <input
+          type="text"
+          name="username"
+          id="name"
+          placeholder="Enter Your Full Name"
+          autocomplete="off"
+          required   
+        />
+          <!-- Dropdown menu -->
+          <label for="courses"><B>Select Your course :</B></label>
+          <select id="courses" name="courses">
+              <option value="B.Tech">B.Tech</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="MCA">MCA</option>
+              <option value="BCA">BCA</option>
+              <option value="MBBS">MBBS</option>
+              <option value="B.Sc">B.Sc</option>
+              <option value="B.Ed">B.Ed</option>
+          </select>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address (example@.com)"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Enter Your Phone No."
+          autocomplete="off"
+          required
+        />
+        <textarea id="message" name="message" rows="3" placeholder="Leave Your message here" autocomplete="off" required min="5"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
